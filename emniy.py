@@ -104,7 +104,7 @@ input:focus {
 
 <div class="title">🌸 Who is 'SHE' to 'ME'</div>
 
-<input id="inputBox" placeholder="Type:" />
+<input id="inputBox" placeholder="Type Ankita to see the magic👀" />
 
 <div id="output"></div>
 
@@ -177,3 +177,4 @@ inputBox.addEventListener("input", () => {
 </body>
 </html>
 """, height=500)
+
