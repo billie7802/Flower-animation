@@ -102,9 +102,9 @@ input:focus {
 
 <div class="container">
 
-<div class="title">🌸 Who is 'SHE' to 'ME'</div>
+<div class="title">🌸'SHE' is a Flower to 'ME'</div>
 
-<input id="inputBox" placeholder="Type Ankita to see the magic👀" />
+<input id="inputBox" placeholder="Type Flower to see the magic👀" />
 
 <div id="output"></div>
 
@@ -140,7 +140,7 @@ inputBox.addEventListener("input", () => {
 
     output.innerHTML = converted;
 
-    if (typed === inputWord) {
+    if (typed === inputWord || typed === inputreverse ) {
 
         for (let i = 0; i < 20; i++) {
 
@@ -152,14 +152,7 @@ inputBox.addEventListener("input", () => {
             document.body.appendChild(flower);
 
             setTimeout(() => flower.remove(), 3000);
-        }
-    }
-                
-    if (typed === inputreverse) {
-
-        for (let i = 0; i < 20; i++) {
-
-            let love = document.createElement("div");
+                let love = document.createElement("div");
             love.className = "love";
             love.innerHTML = "❤️";
             love.style.left = Math.random() * 100 + "vw";
@@ -169,6 +162,7 @@ inputBox.addEventListener("input", () => {
             setTimeout(() => love.remove(), 3000);
         }
     }
+        
     
 });
 
@@ -177,4 +171,3 @@ inputBox.addEventListener("input", () => {
 </body>
 </html>
 """, height=500)
-
